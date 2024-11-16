@@ -1,0 +1,9 @@
+$ git checkout one
+
+$ git cherry-pick c4 c3 c2
+
+$ git checkout two
+
+$ git cherry-pick c5 c4 c3 c2
+
+$ git rebase main~3 three
