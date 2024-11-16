@@ -1,0 +1,7 @@
+$ git checkout main
+
+$ git cherry-pick c2
+
+$ git commit --amend
+
+$ git cherry-pick c3

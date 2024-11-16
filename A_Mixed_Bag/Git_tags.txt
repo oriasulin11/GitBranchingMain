@@ -1,0 +1,5 @@
+$ git checkout c2
+
+$ git tag v1 c2
+
+$ git tag v0 c1

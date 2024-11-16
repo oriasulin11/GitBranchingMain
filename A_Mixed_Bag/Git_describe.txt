@@ -1,0 +1,9 @@
+$ git describe main
+
+v0_2_gC2
+
+$ git describe bugFix
+
+v1_2_gC6
+
+$ git commit
