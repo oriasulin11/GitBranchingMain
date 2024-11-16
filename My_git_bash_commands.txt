@@ -1,0 +1,366 @@
+User@DESKTOP-388HL3G MINGW64 ~
+$ cd C:\Users\User\Desktop\GitBranchingmain
+bash: cd: C:UsersUserDesktopGitBranchingmain: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~
+$ cd C:\Users\User\Desktop
+bash: cd: C:UsersUserDesktop: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~
+$ cd C:\Users\User
+bash: cd: C:UsersUser: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~
+$ cd C:
+
+User@DESKTOP-388HL3G MINGW64 /c
+$ cd Users\User
+bash: cd: UsersUser: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 /c
+$ cd Users
+
+User@DESKTOP-388HL3G MINGW64 /c/Users
+$ cd User
+
+User@DESKTOP-388HL3G MINGW64 ~
+$ cd Desktop
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop (master)
+$ cd GitBranchingmain
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (master)
+$ cd Introduction_Sequence
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git add Introduction to Git Commits
+fatal: pathspec 'Introduction' did not match any files
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ touch Introduction to Git Commits
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ touch Introduction_to_Git_Commits.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Introduction_to_Git_Commits.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git touch Branching_in_Git.txt Merge_in_Git.txt Rebase_introduction.txt
+git: 'touch' is not a git command. See 'git --help'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ touch Branching_in_Git.txt Merge_in_Git.txt Rebase_introduction.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Branching_in_Git.txt
+        new file:   Introduction_to_Git_Commits.txt
+        new file:   Merge_in_Git.txt
+        new file:   Rebase_introduction.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Branching_in_Git.txt
+        new file:   Introduction_to_Git_Commits.txt
+        new file:   Merge_in_Git.txt
+        new file:   Rebase_introduction.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git commit -m"finished first chapter"
+[master (root-commit) 8d3217d] finished first chapter
+ 4 files changed, 21 insertions(+)
+ create mode 100644 Introduction_Sequence/Branching_in_Git.txt
+ create mode 100644 Introduction_Sequence/Introduction_to_Git_Commits.txt
+ create mode 100644 Introduction_Sequence/Merge_in_Git.txt
+ create mode 100644 Introduction_Sequence/Rebase_introduction.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git remote add origin https://github.com/oriasulin11/GitBranchingMain.git
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 568 bytes | 284.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/oriasulin11/GitBranchingMain.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ cd ramping_up
+bash: cd: ramping_up: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ cd GitBranchingmain
+bash: cd: GitBranchingmain: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ cd .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Introduction_Sequence (main)
+$ cd ..
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ cd Ramping_Up
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ touch Detach_yo_head.txt Reletive_refs.txt Reletive_refs#2.txt Reversing_changes.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Detach_yo_head.txt
+        new file:   Reletive_refs#2.txt
+        new file:   Reletive_refs.txt
+        new file:   Reversing_changes.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ git commit -m "Finishing Chapter 2"
+[main fe5408d] Finishing Chapter 2
+ 4 files changed, 12 insertions(+)
+ create mode 100644 Ramping_Up/Detach_yo_head.txt
+ create mode 100644 Ramping_Up/Reletive_refs#2.txt
+ create mode 100644 Ramping_Up/Reletive_refs.txt
+ create mode 100644 Ramping_Up/Reversing_changes.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 623 bytes | 623.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/oriasulin11/GitBranchingMain.git
+   8d3217d..fe5408d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Ramping_Up (main)
+$ cd ..
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ cd Moving_Work_Around
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ touch Cherry-pick_intro.txt Interactive_reabase_intro.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Cherry-pick_intro.txt
+        new file:   Interactive_reabase_intro.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ git commit -m"Finished chapter 3"
+[main cd73b94] Finished chapter 3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Moving_Work_Around/Cherry-pick_intro.txt
+ create mode 100644 Moving_Work_Around/Interactive_reabase_intro.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 496 bytes | 496.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/oriasulin11/GitBranchingMain.git
+   fe5408d..cd73b94  main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Moving_Work_Around (main)
+$ cd ..
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ cd A_Mixed_Bag
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ touch Grabbing_one.txt Juggeling_commits.txt Juggeling_commits#2.txt Git_tags.txt Git_describe.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Git_describe.txt
+        new file:   Git_tags.txt
+        new file:   Grabbing_one.txt
+        new file:   Juggeling_commits#2.txt
+        new file:   Juggeling_commits.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ git commit m"Finished chapter 4"
+error: pathspec 'mFinished chapter 4' did not match any file(s) known to git
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ git commit -m "Finished Chapter 4"
+[main 429271c] Finished Chapter 4
+ 5 files changed, 31 insertions(+)
+ create mode 100644 A_Mixed_Bag/Git_describe.txt
+ create mode 100644 A_Mixed_Bag/Git_tags.txt
+ create mode 100644 A_Mixed_Bag/Grabbing_one.txt
+ create mode 100644 A_Mixed_Bag/Juggeling_commits#2.txt
+ create mode 100644 A_Mixed_Bag/Juggeling_commits.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 735 bytes | 735.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/oriasulin11/GitBranchingMain.git
+   cd73b94..429271c  main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/A_Mixed_Bag (main)
+$ cd ..
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ cd Advanced_Topics
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ touch Rebasing_9000.txt Multiple_parents.txt Branch_Spageti.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ git add .
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Branch_Spageti.txt
+        new file:   Multiple_parents.txt
+        new file:   Rebasing_9000.txt
+
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ git commit -m"Finished the last chapter"
+[main 31ac7d3] Finished the last chapter
+ 3 files changed, 17 insertions(+)
+ create mode 100644 Advanced_Topics/Branch_Spageti.txt
+ create mode 100644 Advanced_Topics/Multiple_parents.txt
+ create mode 100644 Advanced_Topics/Rebasing_9000.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 589 bytes | 589.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/oriasulin11/GitBranchingMain.git
+   429271c..31ac7d3  main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain/Advanced_Topics (main)
+$ cd ..
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ git touch My_git_bash_commands
+git: 'touch' is not a git command. See 'git --help'.
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$ touch My_git_bash_commands.txt
+
+User@DESKTOP-388HL3G MINGW64 ~/Desktop/GitBranchingmain (main)
+$
